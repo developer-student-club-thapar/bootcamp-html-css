@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+.nav {
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+.nav-links {
+    display: flex;
+    /* background-color: aqua; */
+    list-style: none;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+    text-decoration: none;
+}
+
+.navlink {
+    color: green;
+    font-size: 1.8em;
+    cursor: pointer;
+    text-transform: uppercase;
+    animation: animation1 5s;
+}
+
+.hero {
+    display: flex;
+    height: 100vh;
+    margin: 2%;
+    background-color: pink;
+}
+
+.hero img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+.hero .text {
+    width: 40%;
+    margin: auto;
+    margin-top: 2%;
+    background-color: black;
+    color: green;
+}
+.hero .text h1 {
+    font-size: 3em;
+}
+
+.hero .text p {
+    font-size: 2em;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 2em;
+}
+.footer-text p {
+    font-size: 2em;
+    color: green;
+}
+@keyframes animation1 {
+    from {
+        opacity: 0;
+        color: white;
+    }
+    to {
+        opacity: 1;
+        color: green;
+    }
+}
